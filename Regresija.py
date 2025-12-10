@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("delivery_data.csv")  
 
-# Replace missing or empty values
 df = df.replace(r'^\s*$', np.nan, regex=True)
 
 
